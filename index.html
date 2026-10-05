@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ekandaaz Cafe | Italian Restaurant, Behat</title>
+<meta name="description" content="Ekandaaz Cafe - Italian restaurant in Behat, near Anand Bagh. Small plates, quick bites and desserts in a casual setting.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6ee;--card:#fff;--text:#2a1d17;--mute:#6b5a50;--red:#c8372d;--green:#4d6a3a;--gold:#c99a3b;--line:#eadfce;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17100d;--card:#221915;--text:#f5ece1;--mute:#b8a798;--line:#3a2c25}}
+:root[data-theme="dark"]{--bg:#17100d;--card:#221915;--text:#f5ece1;--mute:#b8a798;--line:#3a2c25}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Poppins',system-ui,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+.serif{font-family:'Playfair Display',Georgia,serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:700;color:var(--red)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:500}
+nav ul a:hover{color:var(--red)}
+.btn{display:inline-block;padding:12px 26px;border-radius:999px;background:var(--red);color:#fff;font-weight:600;font-size:15px;border:1.5px solid var(--red);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.o{background:none;color:var(--red)}
+.hero{padding:70px 0 60px;background:radial-gradient(circle at 85% 10%,color-mix(in srgb,var(--gold) 28%,transparent),transparent 45%),radial-gradient(circle at 5% 90%,color-mix(in srgb,var(--red) 18%,transparent),transparent 45%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.tag{display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--green)}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(36px,6vw,62px);line-height:1.1;margin:18px 0}
+h1 em{color:var(--red);font-style:italic}
+.hero p{color:var(--mute);max-width:500px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}
+.rate{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--mute)}
+.rate b{font-size:22px;color:var(--text)}
+.stars{color:var(--gold);letter-spacing:2px}
+.photo{border-radius:26px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;background:linear-gradient(135deg,var(--red),var(--gold));position:relative;font-size:72px}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo small{position:absolute;left:0;right:0;bottom:0;padding:9px;font-size:13px;font-weight:600;background:rgba(0,0,0,.35)}
+.hero .hp{background:#000;max-height:620px}.hero .hp img{width:100%;height:100%;max-height:620px;object-fit:contain}
+section{padding:68px 0}
+.alt{background:var(--card)}
+.eyebrow{color:var(--red);font-weight:600;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(28px,4vw,40px);margin:6px 0 10px}
+.sub{color:var(--mute);margin:0 0 34px;max-width:620px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:20px;padding:24px;transition:transform .2s}
+.alt .card{background:var(--bg)}
+section:not(.alt) .card{background:var(--card)}
+.card:hover{transform:translateY(-4px)}
+.ic{font-size:32px}
+.card h3{margin:10px 0 4px;font-size:18px}
+.card p{margin:0;color:var(--mute);font-size:14px}
+.pz{margin-bottom:18px}.pz h3{font-size:24px;margin:0 0 10px}.pz small{font-size:13px;color:var(--red);font-style:italic;font-family:Poppins,sans-serif;margin-left:8px}
+table{width:100%;border-collapse:collapse;font-size:15px}th{color:var(--red);font-size:13px;text-align:right;padding:6px 8px}td{padding:9px 8px;border-top:1px solid var(--line);text-align:right;font-weight:600}td:first-child,th:first-child{text-align:left;font-weight:500}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}.mgrid .card h3{font-family:'Playfair Display',Georgia,serif;font-size:21px;color:var(--red);margin:0 0 10px}
+.row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px dashed var(--line);font-size:15px}.row b{color:var(--gold);white-space:nowrap}
+.full{margin-top:26px;text-align:center}.full summary{cursor:pointer;list-style:none}.full img{max-width:100%;width:480px;border-radius:18px;margin-top:20px;border:1px solid var(--line)}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fg label{font-size:13px;font-weight:600;color:var(--mute);display:flex;flex-direction:column;gap:6px}.fg input,.fg select{padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit;font-size:15px}@media(max-width:480px){.fg{grid-template-columns:1fr}}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:9px 18px;border-radius:999px;background:var(--bg);border:1px solid var(--line);font-size:14px;font-weight:500}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.info .card h3{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);margin:0 0 12px}
+.info ul{list-style:none;margin:0;padding:0;font-size:15px}
+.info li{padding:5px 0}
+.info li:before{content:"✓";color:var(--green);font-weight:700;margin-right:10px}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.gal .photo{aspect-ratio:4/3;font-size:54px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact a.l{color:var(--red);font-weight:600}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--mute);font-size:14px}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:10;display:none}
+@media(max-width:760px){nav ul{display:none}.hero .wrap,.contact{grid-template-columns:1fr}.hero{padding:44px 0}.float{display:block}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a class="logo" href="#top">Ekandaaz Cafe</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#features">Features</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn" href="tel:+919870614300" style="padding:8px 20px;font-size:14px">Call Now</a>
+</nav></div></header>
+
+<main id="top">
+
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="tag">🇮🇹 Italian Restaurant &nbsp;·&nbsp; Behat</span>
+    <h1>Authentic <em>Italian</em> flavours, served with warmth</h1>
+    <p>Small plates, quick bites and sweet desserts in a relaxed, casual cafe. Come alone, with family or with a big group, there is always a table for you.</p>
+    <div class="cta">
+      <a class="btn" href="#reserve">Reserve a Table</a>
+      <a class="btn o" href="#menu">Explore Menu</a>
+    </div>
+    <div class="rate"><b>4.3</b><span class="stars">★★★★☆</span><span>Rated by our guests</span></div>
+  </div>
+  <div class="photo hp"><img src="menu.jpg" alt="Ekandaaz Cafe menu"></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <span class="eyebrow">Our Story</span>
+  <h2>A cosy corner for good food</h2>
+  <p class="sub">Ekandaaz Cafe is an Italian restaurant in Behat, near Anand Bagh. We focus on simple, tasty food and a friendly casual atmosphere where everyone feels at home, from solo diners to groups and families with kids.</p>
+</div></section>
+
+<section id="menu" class="alt"><div class="wrap">
+  <span class="eyebrow">Menu</span>
+  <h2>Ek Andaaz, Lazawaab Andaaz</h2>
+  <p class="sub">Fresh dough, 100% real cheese. Prices in ₹.</p>
+  <div class="card pz"><h3 class="serif">🍕 Pizza <small>The Star of the Menu</small></h3>
+    <table><thead><tr><th></th><th>S</th><th>M</th><th>L</th></tr></thead><tbody id="pz"></tbody></table></div>
+  <div class="mgrid" id="mg"></div>
+  <details class="full"><summary class="btn o">View Full Menu Card</summary><img src="menu.jpg" alt="Ekandaaz Cafe full menu card"></details>
+</div></section>
+
+<section id="features"><div class="wrap">
+  <span class="eyebrow">Good to Know</span>
+  <h2>Everything you need</h2>
+  <p class="sub">A comfortable place for every kind of visit.</p>
+  <div class="info">
+    <div class="card"><h3>Service</h3><ul><li>Dine-in</li><li>Table service</li><li>Dessert</li></ul></div>
+    <div class="card"><h3>Popular for</h3><ul><li>Solo dining</li><li>Groups</li><li>Quick bite</li></ul></div>
+    <div class="card"><h3>Atmosphere</h3><ul><li>Casual</li><li>Good for kids</li></ul></div>
+    <div class="card"><h3>Areas</h3><ul><li>Family area</li><li>Meeting area</li><li>Birthday party area</li></ul></div>
+    <div class="card"><h3>Payments</h3><ul><li>NFC mobile payments</li></ul></div>
+  </div>
+</div></section>
+
+<section id="reserve" class="alt"><div class="wrap">
+  <span class="eyebrow">Reservation</span>
+  <h2>Book your table</h2>
+  <p class="sub">Details bharo, WhatsApp khulega aur booking message ready milega. Bas Send dabana hai.</p>
+  <div class="card" style="max-width:640px">
+    <div class="fg">
+      <label>Name<input id="rn" type="text" placeholder="Your name"></label>
+      <label>Guests<input id="rg" type="number" min="1" value="2"></label>
+      <label>Date<input id="rd" type="date"></label>
+      <label>Time<input id="rt" type="time" value="19:00"></label>
+      <label style="grid-column:1/-1">Occasion<select id="ro"><option>Dine-in</option><option>Family area</option><option>Meeting area</option><option>Birthday party</option></select></label>
+    </div>
+    <button class="btn" id="rb" style="margin-top:18px;cursor:pointer">Book on WhatsApp</button>
+    <p id="rm" style="color:var(--red);margin-top:10px;font-size:14px"></p>
+    <p style="margin-top:10px;font-size:14px">Ya seedha call karein: <a class="l" href="tel:+919870614300" style="color:var(--red);font-weight:600">+91 98706 14300</a> / <a class="l" href="tel:+919528722209" style="color:var(--red);font-weight:600">+91 95287 22209</a></p>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <span class="eyebrow">Visit Us</span>
+  <h2>Find us &amp; say hello</h2>
+  <p class="sub">Call us to book a table, a meeting or a birthday party.</p>
+  <div class="contact">
+    <div class="card"><div class="ic">📍</div><h3>Address</h3>
+      <p>Ekandaaz Cafe<br>Behat Anandbag, Gali No. 1<br>Open daily, 9:00 AM onwards</p>
+      <p style="margin-top:14px"><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Ekandaaz+Cafe+Behat" target="_blank" rel="noopener" style="padding:9px 20px;font-size:14px">Open in Maps</a></p></div>
+    <div class="card"><div class="ic">📞</div><h3>Call &amp; Follow</h3>
+      <p><a class="l" href="tel:+919870614300">+91 98706 14300</a><br><a class="l" href="tel:+919528722209">+91 95287 22209</a></p><p style="margin-top:6px">Meeting &amp; birthday party area available. Book now!</p>
+      <p style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="https://wa.me/919870614300" target="_blank" rel="noopener" style="padding:9px 20px;font-size:14px">WhatsApp</a>
+        <a class="btn o" href="https://www.instagram.com/ekandaaz_cafe" target="_blank" rel="noopener" style="padding:9px 20px;font-size:14px">Instagram</a></p></div>
+  </div>
+</div></section>
+
+</main>
+
+<a class="btn float" href="tel:+919870614300">📞 Call</a>
+<footer><div class="wrap">© 2026 Ekandaaz Cafe, Behat. All rights reserved.</div></footer>
+
+<script>
+const PZ=[["Farmhouse Pizza",169,309,510],["Margarita Pizza",109,249,399],["Cheese Burst Pizza",129,219,399],["Cheese Corn Pizza",119,229,449],["Ekandaaz Special Pizza",199,349,599],["Ekandaaz Royal Tikka Pizza",189,339,649],["Paneer Peri Peri Pizza",149,279,499]];
+document.getElementById("pz").innerHTML=PZ.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td></tr>`).join("");
+const MENU=[["🍹 Mocktails",[["Green Apple",99],["Virgin Mojito",99],["Hawaiian Blue",99],["Black Currant",99],["Red Stone",99]]],
+["🥤 Shakes",[["Chocolate Shake",110],["KitKat Shake",110],["Oreo Shake",110],["Strawberry Shake",110],["Cold Coffee",110],["Ekandaaz Special Shake",130]]],
+["🍝 Pasta",[["White Sauce Pasta",159],["Red Sauce Pasta",149],["Ekandaaz Special Pasta",179]]],
+["🍜 Maggie",[["Ekandaaz Special Maggie",99]]],
+["🍟 Fries & Sandwiches",[["French Fries",59],["Peri Peri Fries",79],["Ekandaaz Special Fries",109],["Veggie Sandwich",79],["Cheese Sandwich",99],["Ekandaaz Special Sandwich",119]]],
+["🍔 Burgers",[["Veg Burger",59],["Cheese Burger",79],["Ekandaaz Special Burger",119]]],
+["🥟 Momos",[["Kurkure Momos",99],["Cream Veg Momos",99],["Fry Momos",79]]],
+["🧊 Drinks",[["Hell with Ice",80],["Red Bull",130],["Red Bull with Ice",150],["Coke",40],["Thums Up",40],["Water",20]]],
+["☕ Chai & Coffee",[["Ekandaaz Special Chai",40],["Ekandaaz Special Coffee",60]]]];
+document.getElementById("mg").innerHTML=MENU.map(c=>`<div class="card"><h3>${c[0]}</h3>${c[1].map(i=>`<div class="row"><span>${i[0]}</span><b>₹${i[1]}</b></div>`).join("")}</div>`).join("");
+document.getElementById("rd").min=new Date().toISOString().split("T")[0];
+document.getElementById("rb").onclick=function(){
+const n=rn.value.trim(),d=rd.value,t=rt.value,m=document.getElementById("rm");
+if(!n||!d||!t){m.textContent="Please name, date aur time bharein.";return}
+m.textContent="";
+const txt="Hello Ekandaaz Cafe, I want to reserve a table.%0AName: "+encodeURIComponent(n)+"%0AGuests: "+rg.value+"%0ADate: "+d+"%0ATime: "+t+"%0AOccasion: "+encodeURIComponent(ro.value);
+window.open("https://wa.me/919870614300?text="+txt,"_blank");
+};
+</script>
+</body>
+</html>
